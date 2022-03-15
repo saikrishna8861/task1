@@ -1,0 +1,168 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+   
+  }
+  
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  .image {
+    height: calc(100vh - 80px);
+    background-image: url(./car.jpg);
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+    margin: 23px;
+  }
+  #hello{
+      font-style: italic;
+      color: antiquewhite;
+      padding-bottom: 30px;
+  }
+  #feild{
+    padding: 20px 460px 10px 20px;
+    border-color: red;
+    float: left;
+    width: 50%;
+  }
+  #f1{
+    padding: 35px 120px;
+  }
+  #login{
+      font-size: 50px;
+      font-family: sans-serif;
+      color: azure;
+  }
+  #fname{
+      font-size: 25px;
+      border-radius: 7px;
+      border: 1px solid rgb(119, 167, 185);
+      opacity: 0.5;
+  }
+ 
+  #lname{
+    font-size: 25px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    opacity: 0.5;
+  }
+  #email{
+    font-size: 25px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    opacity: 0.5;
+  }
+  #birthday{
+    font-size: 20px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    opacity: 0.5;
+  }
+  #submit{
+    font-size: 20px;
+    justify-content: center;
+    padding: 3px 27px;
+    margin-left: 25px;
+    border-radius: 7px;
+    outline: 0px;
+    box-shadow: none;
+    border: 1px solid gray;
+  
+
+}
+#submit:hover{
+    background-color: burlywood;
+    opacity: 0.5;
+}
+#lab{
+    font-style: italic;
+    color: lightcyan;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+  

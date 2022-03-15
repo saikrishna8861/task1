@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="button_hover.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      var count = 1;
+      function myfunction(btn, color) {
+        var property = document.getElementById(btn);
+        if (count == 0) {
+          property.style.backgroundColor = "#B2B5BC";
+          demo.style.color ="#B2B5BC";
+          document.getElementById("demo").innerHTML="Hey Now Content Changed and color also changed ";
+          count = 1;
+        } else {
+          property.style.backgroundColor ="#B0DB1B";
+          demo.style.color = "#B0DB1B";
+          document.getElementById("demo").innerHTML="this Content Color also Changed  ";
+          count = 0;
+        }
+       
+      }
+    </script>
+</head>
+<body>
+    <div id="place">
+    <p id="demo" style="color: white;"><strong>Click</strong> The<span id="spa"> Button </span>And Change The content</p>
+        <input onclick="myfunction('btn', '#101010')" type="button" id="btn" name="button" value="Submit">
+      </div>
+    <style>
+        body{
+            background-image: url(./car.jpg);
+            opacity: 0.8;
+        }
+     #place{
+        margin: auto;
+    width: 30%;
+    padding: 65px;
+     }
+     #place p{
+         font-size: 15px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+     strong{
+         color: blue;
+         font-size: 15px;
+         
+     }
+     #btn{
+        text-align: center;
+    margin-top: 1px;
+    margin-left: 110px;
+    padding: 12px 45px;
+    border-radius: 12px;
+    border: 1px;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    position: fixed;
+     }
+     #btn:hover{
+       background-color: rgb(97, 190, 61);
+
+     }
+     
+     #spa{
+         color: brown;
+         font-weight: 200px;
+         font-size: 15px;
+      
+     }
+      
+    </style>
+</body>
+</html>

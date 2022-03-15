@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="MegaDropDown.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    
+    <div class="menu-bar">
+      <h1 class="logo">Task</h1>
+      <ul>
+        <li><a href="#">Home<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                  <li><a href="#">events</a></li>
+                  <li><a href="#">notification</a></li>
+                  <li><a href="#">setting</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+        </li>
+        
+        <li><a href="#">About</a></li>
+        <li><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">page-1</a></li>
+                  <li><a href="#">Page-2</a></li>
+                  <li><a href="#">page-3</a></li>
+                  <li><a href="#">page-4</a></li>
+                </ul>
+              </div>
+        </li>
+        <li><a href="#">Blog<i class="fas fa-caret-down"></i></a>
+           
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Ghost</a></li>
+                  <li><a href="#">WordPress </a></li>
+                  
+                </ul>
+              </div> 
+        </li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="image">
+        <form id="feild">
+            
+             <legend id="login">Login</legend>
+             <label id="lab" for="fname">First name:</label>
+             <input type="text" id="fname" name="fname"><br><br>
+             <label id="lab"  for="lname">Last name:</label>
+             <input type="text" id="lname" name="lname"><br><br>
+             <label id="lab"  for="email">Email:</label>
+             <input type="email" id="email" name="email"><br><br>
+             <label id="lab"  for="birthday">Birthday:</label>
+             <input type="date" id="birthday" name="birthday"><br><br>
+             <input type="submit" value="Submit" id="submit">
+           
+           </form>
+    </div>
+    </div>
+  
+  </body>
+</html>
